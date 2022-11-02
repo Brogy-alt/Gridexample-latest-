@@ -6,13 +6,89 @@
     box-sizing: border-box;
 }
 
-/* Layout */    /* Layout */    /* Layout */    /* Layout */
-
-/* header & footer */
+/* header & footer
 header, footer {
     background-color: mediumpurple;
 }
 
 main{
     background-color:midnightblue;
+} */
+
+/* Layout */    /* Layout */    /* Layout */    /* Layout */
+
+/* body{
+    display: grid;  */
+    /* adding display grid wont show anything on the webpage */
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* must add grid-template-columns */
+    /* grid-template-rows: auto 1fr 100px;
+    min-height: 100vh;
+    overflow: hidden; */
+
+/* }
+
+header, main, footer{ */
+    /* min-width: 100vh; */
+    /* grid-column: 1 / 4;
+} */
+
+/* .container {
+    display: flex;
+} */
+
+
+/* media query */
+/* @media screen (max-width: 600px) {
+    .container {
+        width: 50vw;
+    }
+    .container img {
+        width: 100%
+    }
+} */
+
+/* @media (width <= 720px) {
+.container {
+    flex-flow: column wrap;
+}
+.container img {
+    width: 100%;
+} */
+
+
+/*  */  /*  */  /*  */  /*  */  /*  */  /*  */  /*  */  /*  */  /*  */  /*  */ 
+
+main {
+    background-color: goldenrod;
+}
+
+.container {
+    display: flex;
+}
+
+body{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 1fr 100px;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+header, main, footer{
+    min-width: 100vh;
+    grid-column: 1 / 4;
+}
+
+@media (width <= 720px) {
+    .container{
+        flex-flow:column wrap;
+    }
+    .container img {
+        width: 100%;
+    }
+    form {
+        width: 100%;
+
+    }
 }
